@@ -1,10 +1,9 @@
 package com.df.service;
 
-import java.util.List;
-
 import com.df.entity.PersonDossier;
+import com.github.pagehelper.PageInfo;
 
 public interface UserService {
-	List<PersonDossier> queryList(int cpage, int plenth);
+	PageInfo<PersonDossier> queryList(int cpage, int plenth);
 
 }

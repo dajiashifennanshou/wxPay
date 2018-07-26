@@ -1,12 +1,15 @@
 package com.df.dao;
 
 import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 
 import com.df.entity.PersonDossier;
 
+@Mapper
 public interface UserMapper {
 
 	@Select("select pd_accountid,pd_name from Person_Dossier order by autoid")

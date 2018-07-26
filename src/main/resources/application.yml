@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    username: czn_wxykt
+    password: WeiXin*1300/1040
+    url: jdbc:sqlserver://121.46.26.158:1980;DatabaseName=czn_xycykt
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  thymeleaf:
+    prefix: classpath:/ui/
+    suffix: .html
+    mode : HTML5
+    encoding: UTF-8
+    cache: false
+mybatis:
+  type-aliases-package: com.df.mapper
+  mapper-locations: classpath:mapping/*.xml
+  config-location: classpath:mybatis-config.xml 
